@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multi-coloured-navbar</title>
+    <style>
+        :root{
+            --mcolor: rgb(5, 2, 2);
+            --prcolor: rgb(166, 9, 9);
+            --seccolour:gold;
+        }
+       
+        body{
+          background-color: var(--mcolor);
+        }
+        span:nth-child(1){
+            color: antiquewhite;
+            background-color: var(--prcolor);
+            border: 2px solid var(--seccolour);
+            border-radius: 5px;
+        }
+        span:nth-child(2){
+            color: rgb(6, 201, 249);
+            background-color: var(--prcolor);
+            border: 2px solid var(--prcolor);
+            border-radius: 5px;
+        }
+        span:nth-child(3){
+            color: antiquewhite;
+            background-color: var(--prcolor);
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <span>home</span>
+        <span>menu</span>
+        <span>contact us</span>
+    </nav>
+</body>
+</html>

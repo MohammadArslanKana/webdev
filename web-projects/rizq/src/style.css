@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Riot&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-family:"Poppins", sans-serif;
+    filter: saturate(1);
+}
+html{
+    scroll-behavior: smooth;
+}
+
+:root {
+    --textcolor: #941608;
+    --backcolor: #d7d1c4;
+    --scolor: #92352F;
+    --rcolor:rgb(255, 253, 253);
+    --seperatorcolor:rgb(60, 58, 58);
+
+}
+
+
+nav h1 {
+    margin: 15px;
+    font-size: 2em ;
+    font-weight: 200;
+    filter: saturate(1.5);
+    color: var(--textcolor);
+
+}
+
+
+.front {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100vh;
+    background-image: url(sam.jpg);
+    /* background-color: black; */
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+.front .eating{
+    position: fixed;
+    bottom: 0;
+    height: 66%;
+    filter: contrast(1.08);
+}
+
+nav {
+    /* background-color: black; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 16vw;
+    justify-content: space-evenly;
+}
+
+nav span:first-child img {
+    align-self: center;
+    filter: saturate(2.5);
+}
+.front nav span .name {
+    display: flex;
+    flex-direction: column;
+align-items: flex-end;}
+
+.front nav span .name h2{
+    margin: -12px 20px 0px 0px;
+    font-size: small;
+    color: var(--textcolor);
+}
+span {
+    display: flex;
+}
+
+nav>span:first-child {
+    align-items: center;
+}
+
+nav>.link {
+    column-gap: 5vw;
+    width: 40vw;
+    align-self: center;
+    justify-content: space-around;
+    font-size: medium;
+}
+
+ a {
+    font-size: larger;
+    align-self: center;
+    color: black;
+    text-decoration: none;
+}
+
+button {
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--textcolor);
+    transition: color 0.4s ease;
+    height: fit-content;
+}
+
+a:hover {
+    color: var(--textcolor);
+}
+
+a:last-child:hover {
+    color: white;
+}
+
+main>img{
+    position: absolute;
+    width: 99vw;
+    filter: blur(5px);
+    height: -webkit-fill-available;
+}
+
+.menu{
+    border-bottom:8px solid var(--seperatorcolor);
+    padding: 40px;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+.head h2 , .menu h2{
+  font-size: 3em;
+  text-decoration: underline;
+}
+
+.menu .carousel{
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.menu .carousel img{
+    height:32vw;
+    margin:40px 10px;
+    display: inline-block;
+    transition: transform 0.5s ease;
+}
+
+
+.menu .carousel img:hover{
+    
+    transform: scale(1.15);
+
+}
+.contact{
+    background-color:black ;
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10vw;
+    align-items: center;
+    justify-content: center;
+    text-decoration: overline underline;
+}
+.about::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; /* Set the height of the underline */
+    background-color: whitesmoke; /* Set the color of the underline */
+  }
+
+.reviews{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 70vh;
+    height: fit-content;
+    padding: 20px;
+    row-gap: 10px;
+}
+  
+  .reviews .text h2{
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+    text-decoration: underline;
+    font-style: normal;
+  }
+.review{
+    gap: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2 , 20vw);
+
+}
+.review h2{
+    text-decoration: 2px solid underline;
+    
+}
+.contact .about{
+    height: 10rem;
+    width:15rem;
+}
+.contact .about h2{
+    color: whitesmoke;
+}
+
+.contact .about svg{
+    color: whitesmoke;
+}
+.contact .about a {
+   color: rgb(219, 218, 218);
+    font-size: medium;
+    font-weight: 400;
+}
+.contact .about a:hover{
+    color: var(--textcolor);
+}
+.copyright p ,.copyright a{
+    color: white;
+}
+.copyright a{
+    
+    text-decoration: underline;
+}
+.copyright a:hover , .contact .contact_us a svg:hover{
+    color: var(--textcolor);
+    
+}
+/* Target the scrollbar */
+::-webkit-scrollbar {
+    width: 6px; /* Width of the scrollbar */
+  }
+  
+  /* Handle of the scrollbar */
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar handle */
+    border-radius: 4px; /* Rounded corners of the scrollbar handle */
+  }
+  
+  /* Track (the area the handle moves along) */
+  ::-webkit-scrollbar-track {
+    background-color:var(--textcolor); /* Color of the scrollbar track */
+    border-radius: 4px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color on hover */
+  }
+  
+
+@media only screen and (max-width: 787px) {
+    .front{
+        background-image: url(sam2.jpg);
+        height: 98vh;
+    }
+    .front .eating{
+        display: none;
+    }
+    nav>.link {
+        column-gap: 6vw;
+        font-size: small;
+    }
+    nav h1{
+        font-size: 1.4em ;
+    }
+
+   main>img{
+    filter: blur(10px);
+   }
+    .menu .head h2{
+      font-size: xx-large;
+    }
+    .menu .carousel img{
+        height: 50vh;
+    }
+    .contact{
+        height: fit-content;
+        padding: 2rem ;
+    }
+    .review{
+        gap: 4rem;
+        grid-template-columns: 70vw
+    }
+    .reviews .text h2{
+        font-size: 3rem;
+    }
+    .copyright{
+        font-size: small;
+        padding: 20px;
+    }
+}

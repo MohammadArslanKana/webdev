@@ -1,0 +1,96 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+*{
+    padding: 0;margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+:root {
+    --textcolor: #941608;
+    --backcolor: #d7d1c4;
+    --scolor: #92352F;
+    --rcolor:rgb(255, 253, 253);
+    --seperatorcolor:rgb(60, 58, 58);
+
+}
+
+body{
+    height: fit-content;
+    background-image: url(images/design.jpg);
+
+}
+
+body>img{
+    position: absolute;
+    width: 100vw;
+    filter: blur(5px);
+    height: -webkit-fill-available;
+    
+}
+body h1{
+    text-align: center;
+    position: relative;
+    font-size: 4vw;
+    text-decoration: underline;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90vh;
+  
+}
+
+.card{
+    margin:  10px;
+    min-width: 270px;
+    width: 23vw;
+    height: fit-content;    
+    background-color: rgba(184, 183, 183, 0.15);
+    border-radius: 8px;
+    backdrop-filter:  blur(8px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card img{
+    min-width: 270px;
+    width:23vw;
+}
+.card .text{
+    padding: 15px;
+}
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+button {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--textcolor);
+    transition: color 0.4s ease;
+    height: fit-content;
+}
+
+button:active{
+    background-color: #5a0c04;
+}
+
+@media only screen and (max-width: 787px) {
+
+    
+ h1{
+   color: white;
+ }
+ p{
+    color: white;
+ }
+ h2{
+    color: whitesmoke;
+ }
+}

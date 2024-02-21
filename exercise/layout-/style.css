@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    top: 0px;
+    position: sticky;
+}
+.header *{
+    justify-content: space-evenly;
+    display: flex;
+   
+    background-color: rgb(6, 81, 53);
+    color: bisque;
+    font-size: larger;
+    text-decoration: none;
+}
+
+.body{
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+.logo{
+    background-color: rgb(24, 198, 183);
+    position: fixed;
+    display: inline-block;
+    border: 2px solid;
+    left: 96%;
+    height: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.logo img{
+    
+   
+    max-width: 120px;
+    max-height: 90px;
+}
+
+.about{
+    padding: 50px;
+    text-align: center;
+    background-color: beige;
+}
+footer{
+    padding: 30px;
+    background-color: gray;
+    color: aquamarine;
+}

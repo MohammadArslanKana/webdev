@@ -1,0 +1,42 @@
+.mainbody{
+    background-size: cover;
+    background-image: url(blboat.jpg) ;
+    box-sizing: border-box;
+    border-radius:6px ;
+    padding: 2px;
+    width: fit-content;
+}
+.image{ 
+    margin: 5px;
+    max-height: fit-content;
+}
+.image img{
+    border-radius: 6px;
+}
+ul{ 
+    position: relative;
+    right: 26px;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+button{
+    border: none;
+    box-shadow: 1px 1px 2px 1px rgb(34, 82, 16) ;
+    border-radius: 9px;
+    background-color: rgba(43, 215, 89, 0.416);
+}
+h4{
+    font-family: 'Inter', sans-serif;
+    margin: 17px;
+}
+p{
+    font-family: 'Grape Nuts', cursive;
+    max-width: 700px;
+    margin: 17px;
+}
+nav{
+    position: relative;
+    left: 344px;
+    bottom: 8px;
+}

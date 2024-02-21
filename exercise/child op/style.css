@@ -1,0 +1,8 @@
+p:first-child{
+    background-color:olive ;
+    color: beige;
+}
+div p{
+    background-color: antiquewhite;
+    color: burlywood;
+}

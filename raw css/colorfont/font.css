@@ -1,0 +1,38 @@
+p{
+    font-family: 'Grape Nuts', cursive;
+    font-weight:bold;
+    font-size: 20px;
+    line-height: 2;
+    
+    
+}
+h3{
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight:light;
+    text-transform: uppercase;
+    text-indent: 50px;
+    text-align: center;
+    
+}
+h4{
+    font-family: 'poppins';
+    text-decoration:underline;
+    text-decoration-color: rgb(138, 46, 209);
+    text-decoration-style: double;
+    text-decoration-thickness: 0.2px;
+}
+nav{
+    border: 1.6px solid;
+    width: 200px;
+    height: 100px;
+    text-overflow: ellipsis;
+    overflow: scroll;
+   
+}
+header{
+    border: 1.6px solid;
+    width: 200px;
+    height: 300px;
+    word-break: break-all;
+}

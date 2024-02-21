@@ -1,0 +1,45 @@
+.box::first-line{
+background-color: rgb(56, 10, 10);
+}
+.boxes *{
+    color: orangered;
+}
+.box::selection{
+    color: aqua;
+    background-color: beige;
+}
+.boxes::before{
+    content: "this content is added through css by the ::before/after property and is used widely and is called psuedo-elements and are dynamically added";
+}
+.class{
+    background-color: brown;
+    color: beige;
+}
+#id{
+    background-color: blue;
+    color: rgb(244, 237, 184);
+}
+div nav{
+    background-color: yellow;
+    color: rgb(90, 54, 7);
+}
+div > p{
+    background-color: bisque;
+    color: rgb(16, 224, 224);
+}
+p:first-child{
+    background-color: gray;
+    color: blanchedalmond;
+}
+a:visited{
+   color: red;
+}
+a:link{
+   color: green;
+}
+a:active{
+    background-color: beige;
+}
+a:hover{
+     background-color: violet;
+}

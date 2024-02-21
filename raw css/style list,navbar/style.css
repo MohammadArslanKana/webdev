@@ -1,0 +1,13 @@
+ul{
+    display: flex;
+    list-style: none;
+    justify-content:space-evenly;
+    
+}
+nav ul li{
+    padding: 4px;
+    outline: 1px solid gray;
+    outline-offset: 2px;
+    border-radius: 13px;
+    box-shadow: 7px 7px 7px 1.2px rgba(128, 128, 128, 0.516) ;
+   }

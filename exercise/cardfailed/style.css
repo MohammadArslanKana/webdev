@@ -1,0 +1,50 @@
+* {
+    position: relative;
+}
+
+div {
+    background-color: antiquewhite;
+    position: relative;
+    display: inline-block;
+    padding: 8px;
+
+
+}
+
+ul {
+    list-style-type: none;
+    right: 20px;
+    bottom: 15px;
+}
+
+ul li {
+    display: inline-block;
+    padding: 6px;
+    border-radius: 20px;
+    background-color: rgba(237, 26, 26, 0.559);
+
+}
+
+figure {
+    position: relative;
+    right: 25px;
+
+}
+
+.div {
+    
+    bottom: 30px;
+    left: 16px;
+    width: 415px;
+
+}
+
+.read {
+    display: inline-block;
+    padding: 6px;
+    border-radius: 20px;
+    background-color:rgba(237, 26, 26, 0.559);
+    right:197px;
+  
+
+}

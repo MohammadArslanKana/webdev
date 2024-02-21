@@ -1,0 +1,359 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: whitesmoke;
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+
+}
+
+body {
+    background-color: black;
+}
+
+:root {
+    --prhover: rgb(176, 4, 13);
+    --prcolor: rgb(229, 9, 20);
+    --brcolor: rgb(35, 35, 35);
+
+}
+
+.front {
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 80vh;
+    border-bottom: 10px solid var(--brcolor);
+    overflow: hidden;
+    display: flex;
+    row-gap: 25vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+.front .box {
+    position: absolute;
+    opacity: 0.5;
+    background-color: black;
+    height: 80vh;
+    width: 100%;
+}
+
+.front nav {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    margin-top: 22px;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 48%;
+}
+
+.front span {
+    height: auto;
+    width: 10vw;
+    /* max-width: 10vw; */
+    filter: saturate(150%);
+}
+
+.front nav .option select {
+    position: relative;
+    z-index: 1;
+    background-color: black;
+    opacity: 0.7;
+    border-radius: 5px;
+    font-size: large;
+    padding: 3px 22px 3px 12px;
+    cursor: pointer;
+}
+
+.front nav .option button {
+    position: relative;
+    z-index: 1;
+    border: none;
+    background-color: var(--prcolor);
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 6px 12px 6px 12px;
+    cursor: pointer;
+}
+
+.front nav .option button:hover {
+    background-color: var(--prhover);
+}
+
+.front .open {
+    position: relative;
+    height: fit-content;
+    width: 69vw;
+    place-self: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+h1 {
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-size: 3.5vw;
+    font-weight: 900;
+}
+
+h2 {
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+}
+
+.form input {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
+    border-radius: 5px;
+    border: 0.3px solid white;
+    margin: 5px;
+    padding: 15px 100px 15px 20px;
+    font-weight: bolder;
+    cursor:text;
+}
+
+.form input:active {
+    border: 1px solid white;
+}
+
+.form button {
+    background-color: var(--prcolor);
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 15px 50px 15px 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: var(--prhover);
+}
+
+.mid .sect {
+    display: flex;
+    border-bottom: 10px solid var(--brcolor);
+    align-items: center;
+    justify-content: center;
+    height: 69vh;
+}
+
+.sect .text {
+    width: 42vw;
+}
+
+.sect1 .media {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.sect1 .media video {
+    top: 5vw;
+    position: absolute;
+    z-index: -1;
+}
+
+.sect3 .media {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.sect3 .media video {
+    top: 3.8vw;
+    position: absolute;
+    z-index: -1;
+}
+
+.ddmenu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+    border-bottom: 10px solid var(--brcolor);
+}
+
+.ddmenu h1 {
+    margin: 20px;
+}
+
+.ddmenu ul {
+    margin: 5px auto;
+    width: 74vw;
+    background-color: var(--brcolor);
+    list-style: none;
+    border: 0.4px solid black;
+}
+
+.ddmenu ul li {
+    margin: 20px auto;
+}
+
+.ddmenu ul label {
+    display: flex;
+    height: 36px;
+    margin: auto 20px;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bolder;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.ddmenu ul .content {
+    width: 66vw;
+    margin: 10px 42px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+}
+
+.ddmenu input[type="radio"]:checked+label+.content {
+    max-height: 100%;
+}
+
+.ddmenu .end {
+    margin: 25px auto;
+}
+
+footer {
+    margin-top: 3vh;
+    height: 50vh;
+}
+
+footer p,
+footer .lang {
+    position: relative;
+    left: 11.6vw;
+    width: fit-content;
+}
+
+footer .links {
+    display: grid;
+    grid-template-columns: repeat(4, 0.2fr);
+    justify-content: center;
+    row-gap: 16px;
+    padding: 20px;
+    margin: 20px;
+}
+
+footer .links a {
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+footer a:hover {
+    color: var(--prhover);
+}
+
+footer .lang select {
+    background-color: black;
+    opacity: 0.7;
+    border-radius: 5px;
+    font-size: large;
+    padding: 3px 22px 3px 12px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1000px) {
+    .front {
+        row-gap: 10vh;
+        height: 60vh;
+    }
+
+    .front .box {
+        height: 60vh;
+    }
+
+    .front span {
+        width: 20vw;
+    }
+
+    .front nav .option select {
+        font-size: small;
+        width: 3vw;
+    }
+
+    .front nav .option button {
+        padding: 4px 8px 4px 8px
+    }
+
+    h1 {
+        font-size: 3vh;
+        font-weight: 900;
+    }
+
+    h2 {
+        font-size: 2vh;
+        font-weight: 400;
+    }
+
+    .form input,
+    .form button {
+        font-size: xx-small;
+    }
+
+    .mid .sect {
+        flex-wrap: wrap;
+        height: fit-content;
+        text-align: center;
+    }
+
+    .sect .text {
+        padding: 2em;
+        width: 90vw;
+    }
+
+    .sect1 .media video {
+        top: 5.8vh;
+
+    }
+
+    footer {
+        margin: 20px;
+    }
+
+    footer p,
+    footer .lang {
+        left: 10vw;
+    }
+
+    footer .links {
+        grid-template-columns: repeat(2, 1fr);
+        font-size: small;
+    }
+   
+    .ddmenu ul .content {
+        width: fit-content;
+    }
+    .ddmenu .end h2{
+        text-align: center;
+        margin: auto;
+        width: 90%;
+    }
+    .ddmenu ul li label{
+        font-size:18px ;
+        font-weight: 300;
+    }
+    .ddmenu ul li label svg{
+        height: 80%
+
+    }
+}

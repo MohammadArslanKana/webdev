@@ -1,0 +1,107 @@
+body{
+    width: fit-content;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    background-image: linear-gradient(rgb(225, 225, 187), white);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 5px;
+
+}
+
+.option {
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+
+.option a {
+    color: rgb(43, 43, 43);
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    align-self: center;
+    gap: 6px;
+    flex-grow: 0.3;
+    padding-left: 4px;
+    font-family: 'Satisfy', cursive;
+    font-size: 50px;
+}
+
+.front {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin: 50px;
+
+}
+
+.front h1 {
+    font-family: 'Satisfy', cursive;
+    font-size: 150px;
+}
+
+.front h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.shop {
+    display: grid;
+    grid-template-columns: repeat(3 ,200px);
+    grid-template-rows: 200px 200px 200px;
+    place-content: center;
+    gap: 20px;
+    margin: 30px;
+}
+
+.cats {
+    border-radius: 10px;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cats:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(198, 198, 170);
+    transform: scale(1.08);
+}
+
+.cats img {
+    border-radius: 10px;
+    width: 60%;
+}
+
+.cats a {
+    text-decoration: underline rgb(60, 60, 60);
+    color: rgb(60, 60, 60);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+}
+
+footer {
+    text-align: center;
+    background-color: rgba(255, 228, 196, 0.404);
+    font-family: poppins;
+}
+@media only screen and (max-width:445px) {
+   
+    .shop{
+      display: grid;
+      grid-template-columns: 200px
+      }
+      
+  }

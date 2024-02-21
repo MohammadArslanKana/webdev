@@ -1,0 +1,9 @@
+body {
+    background-image: url('image.jpg');
+    color: rgb(247, 219, 150) ;
+   }
+form{
+    border: 2px solid #ff9203 ;
+     background-color: gray  ;
+    
+}

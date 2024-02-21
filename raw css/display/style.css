@@ -1,0 +1,29 @@
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.block {
+    display: inline-block;
+    border: 2px solid black;
+    width: 25vw;
+    margin: 2px;
+    background-color: beige;
+}
+
+.block1{
+ vertical-align: top;
+ padding: 10px;
+    font-family:cursive ;
+    text-transform: capitalize;
+}
+.block2{
+   padding: 15px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+span {
+    background-color: blanchedalmond;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 3px dotted;
+    vertical-align:top;
+}

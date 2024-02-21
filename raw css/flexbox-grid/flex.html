@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container{
+            border: 2px solid;
+            display: flex;
+            height: 50vh;
+            /* justify-content: center; */
+            /* align-items: center; */
+            /* flex-direction: row-reverse; */
+            /* flex-wrap: wrap; */
+            align-content: center;
+            flex-flow: row wrap;
+            /* gap: 20px; */
+            /* row-gap: 20px; */
+            /* column-gap: 10px; */
+            gap: 20px 10px;
+        
+        }
+        .items{
+            background-color: aqua;
+            height: 90px;
+            border: 2px solid;
+            margin: 5px;
+            width: 90px;
+        }
+        .order1{
+            order: 1;
+        }
+        .order2{
+            order: 2;
+        }
+        .order3{
+            order: 0;
+        }
+        .order4{
+            order: 4;
+        }
+    </style>
+</head>
+<body>
+    <menu>
+        <div class="container">
+            <div class="items order2">1</div>
+            <div class="items order4">2</div>
+            <div class="items order1">3</div>
+            <div class="items order3">4</div>
+            <div class="items">5</div>
+            <div class="items">6</div>
+            <div class="items">7</div>
+            <div class="items">8</div>
+            <div class="items">4</div>
+            <div class="items">5</div>
+            <div class="items">6</div>
+            <div class="items">7</div>
+            <div class="items">8</div>
+            <div class="items">4</div>
+            <div class="items">5</div>
+            <div class="items">6</div>
+            <div class="items">7</div>
+            <div class="items">8</div>
+            <div class="items">4</div>
+            <div class="items">5</div>
+            <div class="items">6</div>
+            <div class="items">7</div>
+            <div class="items">8</div>
+            <div class="items">4</div>
+            <div class="items">5</div>
+            <div class="items">6</div>
+            <div class="items">7</div>
+            <div class="items">8</div>
+        </div>
+    </menu>
+</body>
+</html>

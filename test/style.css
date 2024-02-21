@@ -1,0 +1,30 @@
+*{
+    padding: 0;margin: 0;
+}
+
+div {
+    background-color: rgb(204, 18, 18);
+    width: 60vh;
+  
+  
+}
+div button{
+    background-color: inherit;
+    /* border: none; */
+    width: inherit;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 20px; */
+    padding: 20px;
+
+}
+div button :active{
+    background-color:  rgb(190, 27, 27);
+}
+div button{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    font-weight: 400;
+}
+

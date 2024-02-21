@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: whitesmoke;
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+:root {
+    --prhover: rgb(176, 4, 13);
+    --prcolor: rgb(229, 9, 20);
+    --brcolor: rgb(35, 35, 35);
+    --bgcolor: rgba(0, 0, 0, 0.7);
+
+}
+
+.front {
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.mask {
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+header {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    margin-top: 22px;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 48%;
+}
+
+span {
+    position: relative;
+    right: 33%;
+    left: auto;
+    height: auto;
+    width: 10vw;
+    filter: saturate(150%);
+}
+
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    flex-direction: column;
+}
+
+.form input {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
+    border-radius: 5px;
+    border: 0.3px solid white;
+    margin: 5px;
+    padding: 15px 100px 15px 20px;
+    font-weight: bolder;
+    cursor: text;
+}
+
+.form input:active {
+    border: 1px solid white;
+}
+
+.form button {
+    position: relative;
+    background-color: var(--prcolor);
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 15px 125px ;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: var(--prhover);
+}
+
+main {
+    display: flex;
+    place-content: center;
+}
+
+.signin {
+    background-color: var(--bgcolor);
+    padding: 33px 59px;
+    margin: 20px;
+    height: 38vw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 23px;
+}
+
+.signin h1,
+.signin form {
+    position: relative;
+    color: white;
+}
+
+.signin form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    place-items: center;
+}
+.signin form a{
+    text-decoration: none;
+}
+.signin form a:hover{
+    text-decoration: underline;
+    color: rgb(237, 236, 236);
+}
+.extras{
+    margin: 65px auto 0px auto;
+}
+section{
+    position: relative;
+    text-decoration: none;
+}
+section input:hover {
+    background-color: rgb(237, 236, 236);
+}
+
+.text{
+    max-width:20vw ;
+}
+.text p {
+font-size:small;
+}
+.text a:first-child{
+    text-decoration: none;
+    font-size: larger;
+}
+.text a:first-child:hover{
+    text-decoration: underline;
+}
+.text a:last-child{
+    color: rgb(54, 54, 209);
+}
